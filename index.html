@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarika Mandal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-heart logo-heart left-heart"></i>
+            Sarika
+            <i class="fas fa-heart logo-heart right-heart"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <!-- Animated Background for Light Mode -->
+        <div class="light-mode-graphics">
+            <i class="fas fa-laptop-code bg-lappy"></i>
+            <i class="fas fa-guitar bg-guitar"></i>
+            <i class="fas fa-music bg-note-1"></i>
+            <i class="fas fa-code bg-code"></i>
+        </div>
+        <div class="hero-image-container left-side">
+            <div class="artist-blob">
+                <img src="assets/profile.jpg" alt="Sarika Mandal" class="hero-image">
+            </div>
+        </div>
+        <div class="hero-content right-side">
+            <h1 class="title">I am <span class="highlight">Sarika Mandal</span></h1>
+            <h2 class="subtitle">
+                I'm a <span class="typing-text"></span><span class="cursor">|</span>
+            </h2>
+            <div class="dynamic-icon-container">
+                <div class="icon-wrapper" id="icon-musician" style="display:none;">
+                    <i class="fas fa-guitar rock-animation"></i>
+                </div>
+                <div class="icon-wrapper" id="icon-coder" style="display:none;">
+                    <i class="fas fa-laptop-code type-animation"></i>
+                </div>
+                <div class="icon-wrapper" id="icon-artist" style="display:none;">
+                    <i class="fas fa-palette float-animation"></i>
+                </div>
+            </div>
+            <p class="description">
+                Blending the logic of computer science with the creativity of music and art. 
+                I build digital solutions and express myself through melodies.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary-btn">Get In Touch</a>
+                <a href="#about" class="btn secondary-btn">Discover More</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section os-layout">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="about-intro-text">
+            <p>Hello, I'm <strong>Sarika Mandal</strong>. I am a first-semester B.Tech student in Computer Science and Technology at Narula Institute of Technology. I am deeply drawn to artificial intelligence and modern web development, focused on turning my academic learnings into practical, impactful digital solutions.</p>
+            <p>Beyond the screen, I am a passionate artist and musician. I believe that the harmony found in elegant code is very much like the melodies I create. As a singer and a multi-instrumentalist who loves playing the guitar, violin, and harmonium, I thrive in the creative spaces where technology and art intersect.</p>
+            <p>This unique blend of analytical problem-solving and boundless artistic expression defines who I am. Whether I am writing a new algorithm, designing a web interface, or plucking the strings of my guitar, I pour my creativity into everything I do.</p>
+        </div>
+
+        <div class="about-content os-grid">
+            <!-- Terminal Window -->
+            <div class="os-window terminal">
+                <div class="os-header">
+                    <div class="os-buttons">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="os-title">bash - sarika@system</div>
+                </div>
+                <div class="os-body" id="terminal-content">
+                    <!-- Static fallback for no-JS -->
+                    <noscript>
+                        <div class="line"><span class="prompt">sarika:~$</span> whoami</div>
+                        <div class="output">Sarika Mandal</div>
+                        <div class="line"><span class="prompt">sarika:~$</span> cat education.txt</div>
+                        <div class="output">1st Sem B.Tech CSE Student @ Narula Institute of Technology</div>
+                        <div class="line"><span class="prompt">sarika:~$</span> ./run_goals.sh</div>
+                        <div class="output text-green">
+                            [OK] Initializing Artificial Intelligence...<br>
+                            [OK] Building Web Dev foundations...<br>
+                            > Mission: Turning learning into impactful digital solutions.
+                        </div>
+                        <div class="line"><span class="prompt">sarika:~$</span> <span class="blink">_</span></div>
+                    </noscript>
+                </div>
+            </div>
+
+            <!-- Code Editor Window -->
+            <div class="os-window editor">
+                <div class="os-header">
+                    <div class="os-buttons">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="os-title">passions.js - VS Code</div>
+                </div>
+                <div class="os-body code-font" id="editor-content">
+                    <div class="line"><span class="keyword">const</span> <span class="variable">sarika</span> = {</div>
+                    <div class="line indent">role: <span class="string">"Tech Explorer & Musician"</span>,</div>
+                    <div class="line indent">instruments: [<span class="string">"Voice"</span>, <span class="string">"Guitar"</span>, <span class="string">"Violin"</span>, <span class="string">"Harmonium"</span>],</div>
+                    <div class="line indent">hobbies: [<span class="string">"Art"</span>, <span class="string">"Singing"</span>, <span class="string">"Coding"</span>],</div>
+                    <div class="line indent">blend: <span class="keyword">function</span>() {</div>
+                    <div class="line indent-2"><span class="keyword">return</span> <span class="string">"Harmony in code is like the melodies I create."</span>;</div>
+                    <div class="line indent">}</div>
+                    <div class="line">};</div>
+                    <br>
+                    <div class="line"><span class="function">console</span>.<span class="function">log</span>(sarika.blend());</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <h2>Skills & Interests</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                <div class="skill-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Artificial Intelligence</span>
+                    <span class="tag">Web Development</span>
+                    <span class="tag">Programming Fundamentals</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-bolt"></i> Strengths</h3>
+                <ul class="strength-list">
+                    <li><i class="fas fa-check-circle"></i> Quick to pick up unfamiliar technologies</li>
+                    <li><i class="fas fa-check-circle"></i> Focused on practical, web-based solutions</li>
+                    <li><i class="fas fa-check-circle"></i> Collaborative team-based problem solver</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-lightbulb"></i> Creative Vision</h3>
+                <div class="vision-box">
+                    <h4>Bridging Art & Tech</h4>
+                    <p>My goal is to fuse my love for melodies and aesthetics with artificial intelligence, building digital experiences that are logically sound and beautifully expressive.</p>
+                </div>
+            </div>
+
+            <!-- Added Box: C Programming -->
+            <div class="skill-category">
+                <h3><i class="fas fa-terminal"></i> Core Logic</h3>
+                <div class="vision-box" style="border-left-color: var(--accent-color);">
+                    <h4>C Programming</h4>
+                    <p>Building a deep understanding of memory, logic, and algorithmic problem-solving through procedural programming in C.</p>
+                </div>
+            </div>
+
+            <!-- Added Box: Instrumental Music -->
+            <div class="skill-category">
+                <h3><i class="fas fa-guitar"></i> Instrumental Art</h3>
+                <ul class="strength-list">
+                    <li><i class="fas fa-music"></i> <strong>Guitar:</strong> Crafting acoustic rhythms</li>
+                    <li><i class="fas fa-music"></i> <strong>Violin:</strong> Exploring classical melodies</li>
+                    <li><i class="fas fa-music"></i> <strong>Harmonium:</strong> Connecting with traditional roots</li>
+                </ul>
+            </div>
+
+            <!-- Added Box: Vocal Music -->
+            <div class="skill-category">
+                <h3><i class="fas fa-microphone-alt"></i> Vocal Expression</h3>
+                <div class="vision-box" style="border-left-color: var(--secondary-color);">
+                    <h4>Singing & Harmonies</h4>
+                    <p>Using voice as a primary instrument to express emotion, blending classical training with modern creative melodies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section relative-section">
+        <!-- Floating Animated Background Elements -->
+        <div class="edu-bg-animations">
+            <i class="fas fa-guitar float-1"></i>
+            <i class="fas fa-laptop-code float-2"></i>
+            <i class="fas fa-microchip float-3"></i>
+            <i class="fas fa-keyboard float-4"></i>
+            <i class="fas fa-music float-5"></i>
+        </div>
+
+        <div class="section-header relative-z">
+            <h2>Education</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="timeline relative-z">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>B.Tech, Computer Science and Technology</h3>
+                    <h4>Narula Institute of Technology</h4>
+                    <span class="date">2026 - 2030 (Currently in 1st Semester)</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Higher Secondary Education</h3>
+                    <h4>Srirampur Agricultural High School</h4>
+                    <span class="date">Completed</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Secondary Education</h3>
+                    <h4>Byabattarhat Jnanadamayee Bhalika Vidyalaya</h4>
+                    <span class="date">Completed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MUSICAL JOURNEY SECTION ============ -->
+    <section id="music" class="music-section">
+        <div class="section-header">
+            <h2>My Musical Journey</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="music-layout">
+            <!-- Left: Image -->
+            <div class="music-image">
+                <img src="assets/music_journey.jpg" alt="Sarika playing guitar with violin and harmonium">
+            </div>
+
+            <!-- Right: Content -->
+            <div class="music-content">
+                <h3>A Melody That Started in Class 2</h3>
+                <p>Music has been the soul of my life since childhood. What began as a fascination with melodies at a very young age has blossomed into a lifelong devotion that now defines who I am.</p>
+
+                <p>I have been learning and practising music formally <strong>since Class 2</strong>, guided by dedicated teachers who nurtured my love for rhythm and expression. Over the years, I've trained in both <strong>Rabindra Sangeet</strong> and <strong>Indian Classical Music</strong>, and I have successfully cleared my <strong>4th Year Examination</strong> — a milestone of discipline and dedication.</p>
+
+                <div class="instrument-tags">
+                    <span class="inst-tag"><i class="fas fa-guitar"></i> Guitar</span>
+                    <span class="inst-tag"><i class="fas fa-music"></i> Violin</span>
+                    <span class="inst-tag"><i class="fas fa-keyboard"></i> Harmonium</span>
+                </div>
+
+                <p>Whether I'm strumming my guitar, drawing the bow across my violin, or playing soulful ragas on the harmonium — music gives me the same clarity and joy that coding does. It's my second language.</p>
+
+                <div class="music-badge">
+                    <i class="fas fa-award"></i>
+                    <span>4th Year Exam — Rabindra Sangeet & Classical Music</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ AUDIO PLAYER SECTION ============ -->
+    <section id="audio-player" class="audio-section">
+        <!-- Animated Music Background -->
+        <div class="music-bg-elements">
+            <!-- Giant Abstract Vinyl Records -->
+            <div class="giant-bg-record gr-1"></div>
+            <div class="giant-bg-record gr-2"></div>
+            
+            <!-- Floating Music Notes -->
+            <i class="fas fa-music float-note fn-1"></i>
+            <i class="fas fa-headphones float-note fn-2"></i>
+            <i class="fas fa-music float-note fn-3"></i>
+            <i class="fas fa-compact-disc float-note fn-4"></i>
+            <i class="fas fa-microphone-alt float-note fn-5"></i>
+            <i class="fas fa-music float-note fn-6"></i>
+        </div>
+        <div class="section-header">
+            <h2>Listen to My Music</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle" style="text-align: center; color: var(--text-muted); margin-top: 10px;">Here are a few of my soulful renditions.</p>
+        </div>
+
+        <div class="vintage-player">
+            <!-- Vinyl Record -->
+            <div class="player-record-container">
+                <div class="vinyl-record" id="vinyl-record">
+                    <div class="record-label">
+                        <i class="fas fa-music"></i>
+                    </div>
+                </div>
+                <!-- Record Player Arm -->
+                <div class="record-arm" id="record-arm"></div>
+            </div>
+
+            <!-- Player Controls & Info -->
+            <div class="player-controls-panel">
+                <div class="track-info-display">
+                    <h4 id="track-title">Track One</h4>
+                    <p id="track-artist">Acoustic Session</p>
+                </div>
+                
+                <audio id="main-audio-player">
+                    <source src="assets/audio/uploaded_media_0_1790489444665.mp3" type="audio/mpeg">
+                </audio>
+
+                <!-- Custom Progress Bar -->
+                <div class="progress-container" id="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="time-display">
+                    <span id="current-time">0:00</span>
+                    <span id="total-duration">0:00</span>
+                </div>
+
+                <!-- Control Buttons -->
+                <div class="control-buttons">
+                    <button class="ctrl-btn" id="prev-track" title="Previous"><i class="fas fa-backward"></i></button>
+                    <button class="ctrl-btn play-btn" id="play-pause" title="Play/Pause"><i class="fas fa-play" id="play-icon"></i></button>
+                    <button class="ctrl-btn" id="next-track" title="Next"><i class="fas fa-forward"></i></button>
+                </div>
+
+                <!-- Volume Control -->
+                <div class="volume-control">
+                    <i class="fas fa-volume-up" id="volume-icon"></i>
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <!-- Glowing Wave Transition -->
+        <svg class="contact-wave" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" fill="var(--bg-color)"></path>
+            <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" fill="none" stroke="rgba(255,143,163,0.3)" stroke-width="3"></path>
+        </svg>
+
+        <div class="contact-section-glow"></div>
+
+        <!-- Animated Gradient Orbs Background -->
+        <div class="orb-container">
+            <div class="orb orb-music">
+                <i class="fas fa-guitar orb-icon"></i>
+            </div>
+            <div class="orb orb-code">
+                <i class="fas fa-laptop-code orb-icon"></i>
+            </div>
+            <div class="orb orb-accent"></div>
+
+            <!-- Floating Particles -->
+            <div class="particle p1"></div>
+            <div class="particle p2"></div>
+            <div class="particle p3"></div>
+            <div class="particle p4"></div>
+            <div class="particle p5"></div>
+            <div class="particle p6"></div>
+            <div class="particle p7"></div>
+            <div class="particle p8"></div>
+
+            <!-- Giant Background Theme Icons -->
+            <div class="giant-bg-icon g-guitar">
+                <i class="fas fa-guitar"></i>
+            </div>
+            <div class="giant-bg-icon g-laptop">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="giant-bg-icon g-plane">
+                <i class="fas fa-paper-plane"></i>
+            </div>
+
+            <!-- Abstract Geometric Shapes -->
+            <div class="abstract-shape shape-triangle"></div>
+            <div class="abstract-shape shape-circle"></div>
+            <div class="abstract-shape shape-square"></div>
+            <div class="abstract-shape shape-dots"></div>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="section-header">
+                <h2 class="contact-title">Contact Me</h2>
+                <div class="divider"></div>
+                <p class="contact-subtitle">Have an idea? Let's bring it to life together.</p>
+            </div>
+
+            <div class="contact-card">
+                <!-- Left: Info Panel -->
+                <div class="contact-left">
+                    <h3>Let's Connect</h3>
+                    <p class="contact-desc">Whether it's a project, a jam session, or just a hello — I'd love to hear from you.</p>
+                    
+                    <div class="contact-details">
+                        <a href="mailto:sarikamandal229@gmail.com" class="detail-row">
+                            <div class="detail-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="detail-label">Email</span>
+                                <span class="detail-value">sarikamandal229@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <div class="detail-row">
+                            <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Kolkata, West Bengal</span>
+                            </div>
+                        </div>
+                        <a href="https://linkedin.com/in/sarika-mandal-a58211438" target="_blank" class="detail-row">
+                            <div class="detail-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <span class="detail-label">LinkedIn</span>
+                                <span class="detail-value">Sarika Mandal</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="contact-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-field">
+                            <input type="text" id="name" required autocomplete="off">
+                            <label for="name">Your Name</label>
+                            <div class="field-line"></div>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" id="email" required autocomplete="off">
+                            <label for="email">Your Email</label>
+                            <div class="field-line"></div>
+                        </div>
+
+                        <div class="form-field">
+                            <textarea id="message" rows="4" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="field-line"></div>
+                        </div>
+                        <button type="submit" class="send-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sarika Mandal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
